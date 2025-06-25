@@ -73,10 +73,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(9, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 26);
+            this.label1.Size = new System.Drawing.Size(419, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "E-WASTE DROP-OFF ENTRY";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -86,10 +85,9 @@
             this.labelCustomer.AutoSize = true;
             this.labelCustomer.BackColor = System.Drawing.Color.Transparent;
             this.labelCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCustomer.Location = new System.Drawing.Point(11, 68);
-            this.labelCustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCustomer.Location = new System.Drawing.Point(15, 84);
             this.labelCustomer.Name = "labelCustomer";
-            this.labelCustomer.Size = new System.Drawing.Size(86, 17);
+            this.labelCustomer.Size = new System.Drawing.Size(102, 20);
             this.labelCustomer.TabIndex = 3;
             this.labelCustomer.Text = "Customer: ";
             // 
@@ -98,10 +96,10 @@
             this.comboBoxCustomer.DataSource = this.customersBindingSource;
             this.comboBoxCustomer.DisplayMember = "CustomerName";
             this.comboBoxCustomer.FormattingEnabled = true;
-            this.comboBoxCustomer.Location = new System.Drawing.Point(92, 65);
-            this.comboBoxCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxCustomer.Location = new System.Drawing.Point(123, 80);
+            this.comboBoxCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxCustomer.Name = "comboBoxCustomer";
-            this.comboBoxCustomer.Size = new System.Drawing.Size(127, 21);
+            this.comboBoxCustomer.Size = new System.Drawing.Size(168, 24);
             this.comboBoxCustomer.TabIndex = 4;
             this.comboBoxCustomer.ValueMember = "CustomerName";
             this.comboBoxCustomer.SelectedIndexChanged += new System.EventHandler(this.comboBoxCustomer_SelectedIndexChanged);
@@ -126,10 +124,9 @@
             this.labelItem.AutoSize = true;
             this.labelItem.BackColor = System.Drawing.Color.Transparent;
             this.labelItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelItem.Location = new System.Drawing.Point(266, 44);
-            this.labelItem.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelItem.Location = new System.Drawing.Point(355, 54);
             this.labelItem.Name = "labelItem";
-            this.labelItem.Size = new System.Drawing.Size(116, 20);
+            this.labelItem.Size = new System.Drawing.Size(138, 25);
             this.labelItem.TabIndex = 5;
             this.labelItem.Text = "Item Details: ";
             this.labelItem.Click += new System.EventHandler(this.labelItem_Click);
@@ -146,10 +143,10 @@
             "Mouse",
             "Keyboard",
             "Controller"});
-            this.comboBoxType.Location = new System.Drawing.Point(385, 69);
-            this.comboBoxType.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxType.Location = new System.Drawing.Point(513, 85);
+            this.comboBoxType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(127, 21);
+            this.comboBoxType.Size = new System.Drawing.Size(168, 24);
             this.comboBoxType.TabIndex = 7;
             this.comboBoxType.Text = "Select Waste Type";
             this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
@@ -159,20 +156,19 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(267, 69);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(356, 85);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 17);
+            this.label4.Size = new System.Drawing.Size(120, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Waste Type: ";
             // 
             // comboBoxWeight
             // 
             this.comboBoxWeight.FormattingEnabled = true;
-            this.comboBoxWeight.Location = new System.Drawing.Point(385, 96);
-            this.comboBoxWeight.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxWeight.Location = new System.Drawing.Point(513, 118);
+            this.comboBoxWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxWeight.Name = "comboBoxWeight";
-            this.comboBoxWeight.Size = new System.Drawing.Size(127, 21);
+            this.comboBoxWeight.Size = new System.Drawing.Size(168, 24);
             this.comboBoxWeight.TabIndex = 9;
             this.comboBoxWeight.Text = "Select Weight";
             this.comboBoxWeight.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeight_SelectedIndexChanged);
@@ -182,20 +178,19 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(267, 96);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(356, 118);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 17);
+            this.label5.Size = new System.Drawing.Size(118, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Weight (kg): ";
             // 
             // btnAddItem
             // 
             this.btnAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.Location = new System.Drawing.Point(669, 137);
-            this.btnAddItem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddItem.Location = new System.Drawing.Point(892, 169);
+            this.btnAddItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(80, 19);
+            this.btnAddItem.Size = new System.Drawing.Size(107, 23);
             this.btnAddItem.TabIndex = 10;
             this.btnAddItem.Text = "Add Item";
             this.btnAddItem.UseVisualStyleBackColor = true;
@@ -206,10 +201,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(540, 100);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(720, 123);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 17);
+            this.label6.Size = new System.Drawing.Size(132, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Total Amount: ";
             // 
@@ -218,38 +212,37 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(544, 68);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(725, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 17);
+            this.label7.Size = new System.Drawing.Size(127, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "Total Weight: ";
             // 
             // textWeight
             // 
-            this.textWeight.Location = new System.Drawing.Point(669, 65);
-            this.textWeight.Margin = new System.Windows.Forms.Padding(2);
+            this.textWeight.Location = new System.Drawing.Point(892, 80);
+            this.textWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textWeight.Name = "textWeight";
-            this.textWeight.Size = new System.Drawing.Size(76, 20);
+            this.textWeight.Size = new System.Drawing.Size(100, 22);
             this.textWeight.TabIndex = 13;
             this.textWeight.TextChanged += new System.EventHandler(this.textWeight_TextChanged);
             // 
             // textAmount
             // 
-            this.textAmount.Location = new System.Drawing.Point(669, 100);
-            this.textAmount.Margin = new System.Windows.Forms.Padding(2);
+            this.textAmount.Location = new System.Drawing.Point(892, 123);
+            this.textAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textAmount.Name = "textAmount";
-            this.textAmount.Size = new System.Drawing.Size(76, 20);
+            this.textAmount.Size = new System.Drawing.Size(100, 22);
             this.textAmount.TabIndex = 14;
             this.textAmount.TextChanged += new System.EventHandler(this.textAmount_TextChanged);
             // 
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(669, 229);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSubmit.Location = new System.Drawing.Point(881, 348);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSubmit.Name = "buttonSubmit";
-            this.buttonSubmit.Size = new System.Drawing.Size(112, 37);
+            this.buttonSubmit.Size = new System.Drawing.Size(149, 46);
             this.buttonSubmit.TabIndex = 16;
             this.buttonSubmit.Text = "Submit Transaction";
             this.buttonSubmit.UseVisualStyleBackColor = true;
@@ -258,10 +251,10 @@
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(795, 316);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(1060, 389);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(70, 24);
+            this.btnNext.Size = new System.Drawing.Size(93, 30);
             this.btnNext.TabIndex = 17;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -270,10 +263,10 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(837, 11);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Location = new System.Drawing.Point(1116, 14);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 24);
+            this.btnBack.Size = new System.Drawing.Size(93, 30);
             this.btnBack.TabIndex = 25;
             this.btnBack.Text = "Go Back";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -291,9 +284,11 @@
             this.totalAmountDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.dataGridViewItems.DataSource = this.itemDetailsBindingSource;
-            this.dataGridViewItems.Location = new System.Drawing.Point(1, 170);
+            this.dataGridViewItems.Location = new System.Drawing.Point(18, 209);
+            this.dataGridViewItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewItems.Name = "dataGridViewItems";
-            this.dataGridViewItems.Size = new System.Drawing.Size(643, 150);
+            this.dataGridViewItems.RowHeadersWidth = 51;
+            this.dataGridViewItems.Size = new System.Drawing.Size(811, 185);
             this.dataGridViewItems.TabIndex = 26;
             this.dataGridViewItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItems_CellContentClick);
             // 
@@ -301,38 +296,50 @@
             // 
             this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "ItemID";
             this.itemIDDataGridViewTextBoxColumn.HeaderText = "ItemID";
+            this.itemIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
             this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // wasteTypeDataGridViewTextBoxColumn
             // 
             this.wasteTypeDataGridViewTextBoxColumn.DataPropertyName = "WasteType";
             this.wasteTypeDataGridViewTextBoxColumn.HeaderText = "WasteType";
+            this.wasteTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.wasteTypeDataGridViewTextBoxColumn.Name = "wasteTypeDataGridViewTextBoxColumn";
+            this.wasteTypeDataGridViewTextBoxColumn.Width = 125;
             // 
             // weightDataGridViewTextBoxColumn
             // 
             this.weightDataGridViewTextBoxColumn.DataPropertyName = "Weight";
             this.weightDataGridViewTextBoxColumn.HeaderText = "Weight";
+            this.weightDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
+            this.weightDataGridViewTextBoxColumn.Width = 125;
             // 
             // totalWeightDataGridViewTextBoxColumn
             // 
             this.totalWeightDataGridViewTextBoxColumn.DataPropertyName = "TotalWeight";
             this.totalWeightDataGridViewTextBoxColumn.HeaderText = "TotalWeight";
+            this.totalWeightDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.totalWeightDataGridViewTextBoxColumn.Name = "totalWeightDataGridViewTextBoxColumn";
+            this.totalWeightDataGridViewTextBoxColumn.Width = 125;
             // 
             // totalAmountDataGridViewTextBoxColumn
             // 
             this.totalAmountDataGridViewTextBoxColumn.DataPropertyName = "TotalAmount";
             this.totalAmountDataGridViewTextBoxColumn.HeaderText = "TotalAmount";
+            this.totalAmountDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.totalAmountDataGridViewTextBoxColumn.Name = "totalAmountDataGridViewTextBoxColumn";
+            this.totalAmountDataGridViewTextBoxColumn.Width = 125;
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
             this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
             this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // itemDetailsBindingSource
             // 
@@ -354,11 +361,11 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::projectw.Properties.Resources.output_onlinepngtools__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(918, 366);
+            this.ClientSize = new System.Drawing.Size(1224, 450);
             this.Controls.Add(this.dataGridViewItems);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnNext);
@@ -377,7 +384,7 @@
             this.Controls.Add(this.labelCustomer);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "GreenBin Drop-Off Entry";
             this.Load += new System.EventHandler(this.Form2_Load);
