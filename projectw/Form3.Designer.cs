@@ -50,9 +50,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 32);
+            this.label1.Size = new System.Drawing.Size(368, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "E-WASTE PICKUP SCHEDULER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,9 +61,10 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 63);
+            this.comboBox1.Location = new System.Drawing.Point(94, 51);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 24);
+            this.comboBox1.Size = new System.Drawing.Size(127, 21);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.Text = "Select Customer";
             // 
@@ -71,17 +73,19 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 67);
+            this.label3.Location = new System.Drawing.Point(14, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 20);
+            this.label3.Size = new System.Drawing.Size(86, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Customer: ";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(147, 104);
+            this.dateTimePicker1.Location = new System.Drawing.Point(110, 84);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // label2
@@ -89,27 +93,29 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 106);
+            this.label2.Location = new System.Drawing.Point(14, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
+            this.label2.Size = new System.Drawing.Size(105, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Pickup Date: ";
             // 
             // listCustomerItems
             // 
             this.listCustomerItems.FormattingEnabled = true;
-            this.listCustomerItems.ItemHeight = 16;
-            this.listCustomerItems.Location = new System.Drawing.Point(22, 146);
+            this.listCustomerItems.Location = new System.Drawing.Point(16, 119);
+            this.listCustomerItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listCustomerItems.Name = "listCustomerItems";
-            this.listCustomerItems.Size = new System.Drawing.Size(325, 260);
+            this.listCustomerItems.Size = new System.Drawing.Size(245, 212);
             this.listCustomerItems.TabIndex = 9;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(371, 245);
+            this.button2.Location = new System.Drawing.Point(278, 199);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 46);
+            this.button2.Size = new System.Drawing.Size(112, 37);
             this.button2.TabIndex = 17;
             this.button2.Text = "Check Status";
             this.button2.UseVisualStyleBackColor = true;
@@ -119,9 +125,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(373, 316);
+            this.label4.Location = new System.Drawing.Point(280, 257);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 25);
+            this.label4.Size = new System.Drawing.Size(130, 20);
             this.label4.TabIndex = 18;
             this.label4.Text = "Pickup Status: ";
             // 
@@ -134,23 +141,26 @@
             "Pending",
             "Completed",
             "Cancelled"});
-            this.checkedListBox1.Location = new System.Drawing.Point(537, 316);
+            this.checkedListBox1.Location = new System.Drawing.Point(403, 257);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(199, 92);
+            this.checkedListBox1.Size = new System.Drawing.Size(150, 76);
             this.checkedListBox1.TabIndex = 19;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(505, 203);
+            this.textBox2.Location = new System.Drawing.Point(393, 164);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(76, 20);
             this.textBox2.TabIndex = 23;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(500, 160);
+            this.textBox1.Location = new System.Drawing.Point(375, 130);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 22;
             // 
             // label6
@@ -158,9 +168,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(367, 205);
+            this.label6.Location = new System.Drawing.Point(275, 167);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 20);
+            this.label6.Size = new System.Drawing.Size(114, 17);
             this.label6.TabIndex = 21;
             this.label6.Text = "Total Amount: ";
             // 
@@ -169,29 +180,31 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(367, 162);
+            this.label7.Location = new System.Drawing.Point(275, 132);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 20);
+            this.label7.Size = new System.Drawing.Size(110, 17);
             this.label7.TabIndex = 20;
             this.label7.Text = "Total Weight: ";
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(642, 28);
+            this.button5.Location = new System.Drawing.Point(482, 23);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 30);
+            this.button5.Size = new System.Drawing.Size(70, 24);
             this.button5.TabIndex = 24;
             this.button5.Text = "Go Back";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::projectw.Properties.Resources.output_onlinepngtools__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -207,6 +220,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.Text = "GreenBin Pickup Scheduler";
             this.ResumeLayout(false);
