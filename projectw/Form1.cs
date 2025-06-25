@@ -15,7 +15,7 @@ namespace projectw
     public partial class Form1 : Form
     {
 
-        /// private string connectionString = @"Data Source=YOUR_SERVER_NAME;Initial Catalog=GreenBinDB;Integrated Security=True";
+        private string connectionString = @"Data Source=YOUR_SERVER_NAME;Initial Catalog=C:\Users\AMD\Source\Repos\kamiHEBAT\projectw\Customer.mdf;Integrated Security=True";
 
         public Form1()
         {

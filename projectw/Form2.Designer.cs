@@ -217,6 +217,7 @@
             this.buttonSubmit.TabIndex = 16;
             this.buttonSubmit.Text = "Submit Transaction";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // btnNext
             // 
@@ -228,6 +229,7 @@
             this.btnNext.TabIndex = 17;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnBack
             // 
