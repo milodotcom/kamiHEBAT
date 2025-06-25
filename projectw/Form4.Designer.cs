@@ -138,6 +138,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::projectw.Properties.Resources.output_onlinepngtools__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -148,6 +150,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
+            this.DoubleBuffered = true;
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
