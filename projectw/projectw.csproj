@@ -101,6 +101,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>greenbidDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="greenbidDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>greenbidDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -149,6 +154,17 @@
     </None>
     <None Include="greenbidDataSet1.xss">
       <DependentUpon>greenbidDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="greenbidDataSet2.xsc">
+      <DependentUpon>greenbidDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="greenbidDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>greenbidDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="greenbidDataSet2.xss">
+      <DependentUpon>greenbidDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

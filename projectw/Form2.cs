@@ -286,7 +286,13 @@ namespace projectw
 
                             transaction.Commit();
                             MessageBox.Show("Transaction saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            ClearForm();
+
+                            // Pass data to Form3 and show it
+                            Form3 pickupForm = new Form3();
+                            pickupForm.SetCustomerInfo(comboBoxCustomer.Text, customerId);
+                            pickupForm.SetWasteItems(wasteItems);
+                            pickupForm.Show();
+                            this.Hide();
                         }
                         catch (Exception ex)
                         {
@@ -319,6 +325,8 @@ namespace projectw
             if (wasteItems.Count > 0)
             {
                 Form3 pickupForm = new Form3();
+                pickupForm.SetCustomerInfo(comboBoxCustomer.Text, Convert.ToInt32(comboBoxCustomer.SelectedValue));
+                pickupForm.SetWasteItems(wasteItems);
                 pickupForm.Show();
                 this.Hide();
             }
