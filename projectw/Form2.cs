@@ -31,5 +31,50 @@ namespace projectw
         {
 
         }
+
+        private void labelItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxCustomer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxItems_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxWeight_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textWeight_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
