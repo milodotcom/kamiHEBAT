@@ -290,9 +290,5 @@ namespace projectw
                 textAddress.Text = row.Cells["Address"].Value.ToString();
             }
         }
-
-        // Other event handlers (keep these empty for now)
-       
-      
     }
 }
