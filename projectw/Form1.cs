@@ -41,5 +41,10 @@ namespace projectw
         {
 
         }
+
+        private void textPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -104,10 +104,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 109);
+            this.textBox2.Location = new System.Drawing.Point(137, 109);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(297, 22);
+            this.textBox2.Size = new System.Drawing.Size(286, 22);
             this.textBox2.TabIndex = 6;
+            this.textBox2.TextChanged += new System.EventHandler(this.textPhone_TextChanged);
             // 
             // textBox4
             // 
@@ -165,7 +166,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.74252F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.25748F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label8, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
@@ -185,7 +186,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(302, 0);
+            this.label7.Location = new System.Drawing.Point(300, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 16);
             this.label7.TabIndex = 2;
@@ -194,7 +195,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(447, 0);
+            this.label8.Location = new System.Drawing.Point(445, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 16);
             this.label8.TabIndex = 3;
@@ -205,14 +206,14 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 16);
+            this.label4.Size = new System.Drawing.Size(67, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Customer ID";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(89, 0);
+            this.label6.Location = new System.Drawing.Point(88, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 16);
             this.label6.TabIndex = 1;
