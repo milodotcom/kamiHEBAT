@@ -31,25 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.greenbidDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.greenbidDataSet = new projectw.greenbidDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textTotalAmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
-            this.greenbidDataSet = new projectw.greenbidDataSet();
-            this.greenbidDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new projectw.greenbidDataSetTableAdapters.CustomersTableAdapter();
-            this.textWeight = new System.Windows.Forms.TextBox();
+            this.textTotalWeight = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.greenbidDataSet2 = new projectw.greenbidDataSet2();
-            this.pickupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pickupsTableAdapter = new projectw.greenbidDataSet2TableAdapters.PickupsTableAdapter();
             this.pickupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,12 +54,15 @@
             this.totalWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSetBindingSource)).BeginInit();
+            this.pickupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.greenbidDataSet2 = new projectw.greenbidDataSet2();
+            this.pickupsTableAdapter = new projectw.greenbidDataSet2TableAdapters.PickupsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickupsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,6 +90,21 @@
             this.comboBoxCustomer.Size = new System.Drawing.Size(127, 21);
             this.comboBoxCustomer.TabIndex = 6;
             this.comboBoxCustomer.ValueMember = "CustomerName";
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.greenbidDataSetBindingSource;
+            // 
+            // greenbidDataSetBindingSource
+            // 
+            this.greenbidDataSetBindingSource.DataSource = this.greenbidDataSet;
+            this.greenbidDataSetBindingSource.Position = 0;
+            // 
+            // greenbidDataSet
+            // 
+            this.greenbidDataSet.DataSetName = "greenbidDataSet";
+            this.greenbidDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label3
             // 
@@ -161,13 +176,14 @@
             this.checkedListBox1.Size = new System.Drawing.Size(150, 76);
             this.checkedListBox1.TabIndex = 19;
             // 
-            // textBox2
+            // textTotalAmount
             // 
-            this.textBox2.Location = new System.Drawing.Point(415, 86);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
-            this.textBox2.TabIndex = 23;
+            this.textTotalAmount.Location = new System.Drawing.Point(415, 86);
+            this.textTotalAmount.Margin = new System.Windows.Forms.Padding(2);
+            this.textTotalAmount.Name = "textTotalAmount";
+            this.textTotalAmount.Size = new System.Drawing.Size(76, 20);
+            this.textTotalAmount.TabIndex = 23;
+            this.textTotalAmount.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label6
             // 
@@ -193,32 +209,18 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // greenbidDataSet
-            // 
-            this.greenbidDataSet.DataSetName = "greenbidDataSet";
-            this.greenbidDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // greenbidDataSetBindingSource
-            // 
-            this.greenbidDataSetBindingSource.DataSource = this.greenbidDataSet;
-            this.greenbidDataSetBindingSource.Position = 0;
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.greenbidDataSetBindingSource;
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
             // 
-            // textWeight
+            // textTotalWeight
             // 
-            this.textWeight.Location = new System.Drawing.Point(415, 51);
-            this.textWeight.Margin = new System.Windows.Forms.Padding(2);
-            this.textWeight.Name = "textWeight";
-            this.textWeight.Size = new System.Drawing.Size(76, 20);
-            this.textWeight.TabIndex = 22;
+            this.textTotalWeight.Location = new System.Drawing.Point(415, 51);
+            this.textTotalWeight.Margin = new System.Windows.Forms.Padding(2);
+            this.textTotalWeight.Name = "textTotalWeight";
+            this.textTotalWeight.Size = new System.Drawing.Size(76, 20);
+            this.textTotalWeight.TabIndex = 22;
+            this.textTotalWeight.TextChanged += new System.EventHandler(this.textTotalWeight_TextChanged);
             // 
             // label7
             // 
@@ -249,20 +251,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(743, 150);
             this.dataGridView1.TabIndex = 25;
-            // 
-            // greenbidDataSet2
-            // 
-            this.greenbidDataSet2.DataSetName = "greenbidDataSet2";
-            this.greenbidDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pickupsBindingSource
-            // 
-            this.pickupsBindingSource.DataMember = "Pickups";
-            this.pickupsBindingSource.DataSource = this.greenbidDataSet2;
-            // 
-            // pickupsTableAdapter
-            // 
-            this.pickupsTableAdapter.ClearBeforeFill = true;
             // 
             // pickupIDDataGridViewTextBoxColumn
             // 
@@ -307,6 +295,20 @@
             this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
+            // pickupsBindingSource
+            // 
+            this.pickupsBindingSource.DataMember = "Pickups";
+            this.pickupsBindingSource.DataSource = this.greenbidDataSet2;
+            // 
+            // greenbidDataSet2
+            // 
+            this.greenbidDataSet2.DataSetName = "greenbidDataSet2";
+            this.greenbidDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pickupsTableAdapter
+            // 
+            this.pickupsTableAdapter.ClearBeforeFill = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,8 +318,8 @@
             this.ClientSize = new System.Drawing.Size(930, 366);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textWeight);
+            this.Controls.Add(this.textTotalAmount);
+            this.Controls.Add(this.textTotalWeight);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkedListBox1);
@@ -333,12 +335,12 @@
             this.Name = "Form3";
             this.Text = "GreenBin Pickup Scheduler";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pickupsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenbidDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,14 +356,14 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textTotalAmount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.BindingSource greenbidDataSetBindingSource;
         private greenbidDataSet greenbidDataSet;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private greenbidDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-        private System.Windows.Forms.TextBox textWeight;
+        private System.Windows.Forms.TextBox textTotalWeight;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private greenbidDataSet2 greenbidDataSet2;

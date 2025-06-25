@@ -46,6 +46,7 @@
             this.textWeight = new System.Windows.Forms.TextBox();
             this.textAmount = new System.Windows.Forms.TextBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.dataGridViewItems = new System.Windows.Forms.DataGridView();
             this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -208,9 +209,9 @@
             this.label6.Location = new System.Drawing.Point(540, 100);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 17);
+            this.label6.Size = new System.Drawing.Size(72, 17);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Total Amount: ";
+            this.label6.Text = "Amount: ";
             // 
             // label7
             // 
@@ -220,9 +221,9 @@
             this.label7.Location = new System.Drawing.Point(544, 68);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 17);
+            this.label7.Size = new System.Drawing.Size(68, 17);
             this.label7.TabIndex = 11;
-            this.label7.Text = "Total Weight: ";
+            this.label7.Text = "Weight: ";
             // 
             // textWeight
             // 
@@ -245,14 +246,26 @@
             // buttonSubmit
             // 
             this.buttonSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubmit.Location = new System.Drawing.Point(752, 244);
+            this.buttonSubmit.Location = new System.Drawing.Point(661, 283);
             this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(112, 37);
             this.buttonSubmit.TabIndex = 16;
-            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.Text = "Submit Transaction";
             this.buttonSubmit.UseVisualStyleBackColor = true;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(795, 316);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(70, 24);
+            this.btnNext.TabIndex = 17;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnBack
             // 
@@ -278,10 +291,10 @@
             this.totalAmountDataGridViewTextBoxColumn,
             this.customerIDDataGridViewTextBoxColumn});
             this.dataGridViewItems.DataSource = this.itemDetailsBindingSource;
-            this.dataGridViewItems.Location = new System.Drawing.Point(54, 188);
+            this.dataGridViewItems.Location = new System.Drawing.Point(14, 170);
             this.dataGridViewItems.Name = "dataGridViewItems";
             this.dataGridViewItems.RowHeadersWidth = 51;
-            this.dataGridViewItems.Size = new System.Drawing.Size(660, 150);
+            this.dataGridViewItems.Size = new System.Drawing.Size(608, 150);
             this.dataGridViewItems.TabIndex = 26;
             this.dataGridViewItems.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItems_CellContentClick);
             // 
@@ -361,6 +374,7 @@
             this.ClientSize = new System.Drawing.Size(918, 366);
             this.Controls.Add(this.dataGridViewItems);
             this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.textAmount);
             this.Controls.Add(this.textWeight);
@@ -407,6 +421,7 @@
         private System.Windows.Forms.TextBox textWeight;
         private System.Windows.Forms.TextBox textAmount;
         private System.Windows.Forms.Button buttonSubmit;
+        private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DataGridView dataGridViewItems;
         private greenbidDataSet greenbidDataSet;

@@ -27,7 +27,7 @@ namespace projectw
             itemsDataTable.Columns.Add("Weight (kg)", typeof(string));
             itemsDataTable.Columns.Add("Amount (RM)", typeof(string));
 
-            // Ensure button is initially disabled
+            // Ensure buttons are initially disabled
             buttonSubmit.Enabled = false;
             btnAddItem.Enabled = false;
         }
@@ -104,6 +104,26 @@ namespace projectw
                 comboBoxWeight.Items.Add(i.ToString("0.0"));
             }
             comboBoxWeight.SelectedIndex = -1;
+        }
+
+        private void textWeight_TextChanged(object sender, EventArgs e)
+        {
+            // Add any logic you need when the weight text changes
+            // For example, you might want to validate the input:
+            if (!decimal.TryParse(textWeight.Text.Replace(" kg", ""), out _) && !string.IsNullOrEmpty(textWeight.Text))
+            {
+                MessageBox.Show("Please enter a valid weight", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textAmount_TextChanged(object sender, EventArgs e)
+        {
+            // Add any logic you need when the amount text changes
+            // For example, you might want to validate the input:
+            if (!decimal.TryParse(textAmount.Text.Replace("RM ", ""), out _) && !string.IsNullOrEmpty(textAmount.Text))
+            {
+                MessageBox.Show("Please enter a valid amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void comboBoxCustomer_SelectedIndexChanged(object sender, EventArgs e)
@@ -202,7 +222,7 @@ namespace projectw
             try
             {
                 decimal weight = decimal.Parse(comboBoxWeight.SelectedItem.ToString());
-                decimal amount = decimal.Parse(textAmount.Text.Replace("RM ", ""));
+                decimal amount = decimal.Parse(textAmount.Text);
 
                 WasteItem item = new WasteItem
                 {
@@ -244,6 +264,21 @@ namespace projectw
             decimal totalAmount = wasteItems.Sum(i => i.Amount);
             textWeight.Text = totalWeight.ToString("0.00") + " kg";
             textAmount.Text = "RM " + totalAmount.ToString("0.00");
+        }
+
+        public void PassDataToForm3(Form3 form3)
+        {
+            if (comboBoxCustomer.SelectedIndex >= 0 && wasteItems.Count > 0)
+            {
+                int customerId = Convert.ToInt32(comboBoxCustomer.SelectedValue);
+                string customerName = comboBoxCustomer.Text;
+                decimal totalWeight = wasteItems.Sum(i => i.Weight);
+                decimal totalAmount = wasteItems.Sum(i => i.Amount);
+
+                form3.SetCustomerInfo(customerName, customerId);
+                form3.SetWasteItems(wasteItems);
+                form3.UpdateTotals(totalWeight, totalAmount);
+            }
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
@@ -289,8 +324,7 @@ namespace projectw
 
                             // Pass data to Form3 and show it
                             Form3 pickupForm = new Form3();
-                            pickupForm.SetCustomerInfo(comboBoxCustomer.Text, customerId);
-                            pickupForm.SetWasteItems(wasteItems);
+                            PassDataToForm3(pickupForm);
                             pickupForm.Show();
                             this.Hide();
                         }
@@ -308,25 +342,12 @@ namespace projectw
             }
         }
 
-        private void ClearForm()
-        {
-            wasteItems.Clear();
-            itemsDataTable.Rows.Clear();
-            comboBoxCustomer.SelectedIndex = -1;
-            comboBoxType.SelectedIndex = -1;
-            comboBoxWeight.SelectedIndex = -1;
-            textWeight.Text = "";
-            textAmount.Text = "";
-            buttonSubmit.Enabled = false;
-        }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (wasteItems.Count > 0)
             {
                 Form3 pickupForm = new Form3();
-                pickupForm.SetCustomerInfo(comboBoxCustomer.Text, Convert.ToInt32(comboBoxCustomer.SelectedValue));
-                pickupForm.SetWasteItems(wasteItems);
+                PassDataToForm3(pickupForm);
                 pickupForm.Show();
                 this.Hide();
             }
@@ -343,13 +364,25 @@ namespace projectw
             this.Hide();
         }
 
+        private void ClearForm()
+        {
+            wasteItems.Clear();
+            itemsDataTable.Rows.Clear();
+            comboBoxCustomer.SelectedIndex = -1;
+            comboBoxType.SelectedIndex = -1;
+            comboBoxWeight.SelectedIndex = -1;
+            textWeight.Text = "";
+            textAmount.Text = "";
+            buttonSubmit.Enabled = false;
+        }
+
         // Empty event handlers to maintain designer compatibility
         private void Form2_Load(object sender, EventArgs e) { }
         private void pictureBox1_Click(object sender, EventArgs e) { }
         private void pictureBox2_Click(object sender, EventArgs e) { }
         private void label6_Click(object sender, EventArgs e) { }
-        private void textWeight_TextChanged(object sender, EventArgs e) { }
-        private void textAmount_TextChanged(object sender, EventArgs e) { }
+        private void textTotalWeight_TextChanged(object sender, EventArgs e) { }
+        private void textTotalAmount_TextChanged(object sender, EventArgs e) { }
         private void dataGridViewItems_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
         private void labelItem_Click(object sender, EventArgs e) { }
     }
